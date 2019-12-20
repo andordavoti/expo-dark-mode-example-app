@@ -1,15 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default class FirstScreen extends React.Component {
-    render() {
-        let theme = this.props.screenProps;
-        return (
-            <View style={theme === 'dark' ? styles.containerDark : styles.containerLight}>
-                <Text style={theme === 'dark' ? styles.textDark : styles.textLight}>FirstScreen</Text>
-            </View>
-        );
-    }
+export default FirstScreen = (props) => {
+    let theme = props.screenProps;
+    return (
+        <View style={theme === 'dark' ? styles.containerDark : styles.containerLight}>
+            <Text style={theme === 'dark' ? styles.textDark : styles.textLight}>FirstScreen</Text>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
