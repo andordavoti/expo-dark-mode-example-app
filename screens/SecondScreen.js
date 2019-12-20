@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     containerDark: {
         flex: 1,
         justifyContent: 'center',
-        backgroundColor: 'black'
+        backgroundColor: '#1c1c1c'
     },
     textLight: {
         textAlign: 'center',
